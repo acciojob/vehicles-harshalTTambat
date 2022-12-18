@@ -6,11 +6,8 @@ public class Boat implements WaterVehicle
     private String name;
     private int capacity;
 
-    public void setName(String name) {
+    public Boat(String name, int capacity) {
         this.name = name;
-    }
-
-    public void setCapacity(int capacity) {
         this.capacity = capacity;
     }
 
