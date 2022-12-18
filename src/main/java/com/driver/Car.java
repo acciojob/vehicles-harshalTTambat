@@ -13,17 +13,41 @@ public class Car extends Vehicle {
         this.currentGear = currentGear;
     }
 
+    public void setWheels(int wheels) {
+        this.wheels = wheels;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public void setDoors(int doors) {
+        this.doors = doors;
+    }
+
+    public void setGears(int gears) {
+        this.gears = gears;
+    }
+
+    public void setManual(boolean manual) {
+        isManual = manual;
+    }
+
+    public void setSeats(int seats) {
+        this.seats = seats;
+    }
+
     public Car(String name, int wheels, int doors, int gears, boolean isManual, String type, int seats) {
 
         //Hint: Car extends Vehicle
         // initialize the variables using parameters and set currentGear as 1.
         super(name);
-        this.wheels = wheels;
-        this.doors = doors;
-        this.isManual = isManual;
-        this.type = type;
-        this.seats = seats;
-        this.gears = gears;
+        setWheels(wheels);
+        setDoors(doors);
+        setManual(isManual);
+        setType(type);
+        setSeats(seats);
+        setGears(gears);
         setCurrentGear(1);
     }
 
