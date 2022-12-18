@@ -5,6 +5,10 @@ public class Boat implements WaterVehicle
     String name;
     int capacity;
 
+    public Boat() {
+        // empty
+    }
+
     public Boat(String name, int capacity)
     {
         this.name = name;
